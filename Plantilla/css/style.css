@@ -1,0 +1,69 @@
+body {
+    background-color: #dbdbdb !important;
+}
+.mainBox {
+    
+    background:white;
+    bottom:10px;
+    width: 60%;
+    height: 800px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.box1 {
+    
+    background:#dbdbdb;
+    bottom:10px;
+    width: 90%;
+    height: 620px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.equipment {
+    
+    background:blue;
+    bottom:10px;
+    width: 90%;
+    height: 620px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.official {
+    
+    background:red;
+    bottom:10px;
+    width: 90%;
+    height: 620px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.btn-box {
+    
+
+    bottom:10px;
+    width: 90%;
+    height: 700px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}

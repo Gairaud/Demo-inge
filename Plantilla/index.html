@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>       
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </head>
+
+
+    <body>
+
+        <div class ="mainBox">
+            <div class ="btn-box">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-primary " id="optOfficial">
+                      <input type="radio" name="options"  > Datos del oficial
+                    </label>
+                    <label class="btn btn-primary" id="optEquipment">
+                      <input type="radio" name="options"> Datos del equipo
+                    </label>
+                  
+                  </div>
+
+            </div>
+            <div class="box1">
+               
+            </div>
+            <div class="equipment" id="eqDiv">
+               
+            </div>
+            <div class="official" id="ofDiv">
+               
+            </div>
+        </div>
+
+        <script>
+            
+            function loaded(){
+              
+            $("#optOfficial").click(officialForm);
+            $("#optEquipment").click(equipmentForm);
+            $("#eqDiv").hide();
+            $("#ofDiv").hide();
+           
+           
+            }
+            function officialForm(){
+
+                alert("Se muestran los datos del oficial");
+                $("#eqDiv").hide();
+                $("#ofDiv").show();
+
+            }
+            function equipmentForm(){
+
+            alert("Se muestran los datos del equipo");
+            $("#ofDiv").hide();
+            $("#eqDiv").show();
+
+            }
+            $(loaded);
+
+
+        </script>
+    
+    </body>
+</html>
