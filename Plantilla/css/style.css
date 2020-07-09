@@ -42,7 +42,7 @@ body {
     margin: auto;
 }
 .official {
-    background:#F8B195;
+    background:#a1c4fd;
     bottom:10px;
     width: 90%;
     height: 620px;
@@ -65,4 +65,8 @@ body {
     top: 0;
     bottom: 0;
     margin: auto;
+}
+
+.invalid {
+    border:  3px solid red;
 }

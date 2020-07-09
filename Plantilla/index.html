@@ -79,7 +79,8 @@
                                 <div class="form-group row">
                                     <label for="expire" class="col-sm-3 col-form-label">Vencimiento del Carnet de Portación de Armas:</label>
                                     <div class="col-sm-9">
-                                      <input type="text" readonly id="expire" value="7-8-2022">
+                                      <input type="text" readonly id="expire" value="01/05/2022">
+                                      <button type="button" class="btn btn-danger" onclick="expiredIdAlert()">Simular Carnet Vencido</button>
                                     </div>
                                 </div>
 
@@ -139,6 +140,13 @@
             $("#eqDiv").show();
 
             }
+
+            function expiredIdAlert(){
+              alert("ALERTA: CARNET DE PORTACIÓN DE ARMAS VENCIDO");
+              $("#expire").addClass("invalid");
+              $("#expire").val("02/03/2020");
+            }
+
             $(loaded);
 
 
