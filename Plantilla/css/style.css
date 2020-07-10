@@ -1,12 +1,11 @@
 body {
-    background-color: #dbdbdb !important;
+    background-color: white !important;
 }
 .mainBox {
-    
     background:white;
     bottom:10px;
     width: 60%;
-    height: 800px;
+    height: auto;
     position: absolute;
     left: 0;
     right: 0;
