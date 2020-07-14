@@ -137,7 +137,7 @@
             <div class="official" id="ofDiv">
               <div class="container" style="background-color: #a1c4fd;">
                     <div class="row">
-                        <div class="col-md-10">
+                        <div class="col-md-9">
                             <form>
                                 <div class="form-group row">
                                   <label for="name" class="col-sm-3 col-form-label">Nombre:</label>
@@ -177,15 +177,18 @@
                                 <div class="form-group row">
                                     <label for="address" class="col-sm-3 col-form-label">Dirección:</label>
                                     <div class="col-sm-9">
-                                      <textarea readonly class="form-control" style="width: 30%" id="address">Alajuela, Alajuela Centro 100 mts Norte de la Iglesia La Agonía</textarea>
+                                      <textarea readonly style="width:40%;resize:none;min-height:15px;" class="form-control" id="address">Alajuela, Alajuela Centro 100 mts Norte de la Iglesia La Agonía</textarea>
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
                                     <label for="expire" class="col-sm-3 col-form-label">Vencimiento del Carnet de Portación de Armas:</label>
                                     <div class="col-sm-9">
-                           
                                       <input type="text" class="form-control" style="width: 20%" readonly id="expire" value="01/05/2022">
+                                      <div class="invalid-feedback">
+                                        El Carnet de Portación de Armas se encuentra Vencido
+                                      </div>
+                                      <br>
                                       <button type="button" class="btn btn-danger" onclick="expiredIdAlert()">Simular Carnet Vencido</button>
                                     </div>
                                 </div>
@@ -200,7 +203,7 @@
                                 <div class="form-group row">
                                     <label for="reason" class="col-sm-3 col-form-label">Condición de Actividad:</label>
                                     <div class="col-sm-9">
-                                      <textarea style="width: auto" id="reason" class="form-control" readonly>Se detalla la condición de Actividad del Oficial de Seguridad</textarea>
+                                      <input type="text" style="width: 20%" class="form-control" readonly id="reason" value="Activo">
                                     </div>
                                 </div>
 
@@ -213,8 +216,8 @@
 
                             </form>
                         </div>
-                        <div class="col-md-2 show-image text-center">
-                            <img src="Images/Officer.png" style="width:150px;height:150px;" alt="Oficial de Seguridad">
+                        <div class="col-md-3 show-image text-center">
+                            <img src="Images/Officer.png" style="width:120px;height:150px;" alt="Oficial de Seguridad">
                         </div>
                     </div>
                 </div>
@@ -255,7 +258,7 @@
 
             function expiredIdAlert(){
               alert("ALERTA: CARNET DE PORTACIÓN DE ARMAS VENCIDO");
-              $("#expire").addClass("invalid");
+              $("#expire").addClass("form-control is-invalid");
               $("#expire").val("02/03/2020");
             }
 

@@ -51,10 +51,10 @@ body {
     top: 0;
     bottom: 0;
     margin: auto;
+    padding-top: 15px;
+    font-weight: bold;
 }
 .btn-box {
-    
-
     bottom:10px;
     width: 90%;
     height: 700px;
@@ -64,10 +64,6 @@ body {
     top: 0;
     bottom: 0;
     margin: auto;
-}
-
-.invalid {
-    border:  3px solid red;
 }
 
 .NAVIGATION {
