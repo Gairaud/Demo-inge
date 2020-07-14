@@ -93,3 +93,16 @@ body {
     position: absolute;
     bottom: 0;
 }
+
+.footer {
+  background: #666666;
+    position: absolute;
+    top: 1000;
+	color: white;
+    bottom: 0;
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+  
+}
+
