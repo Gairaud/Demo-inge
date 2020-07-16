@@ -14,6 +14,11 @@ body {
     margin: auto;
 }
 
+.alert {
+
+    width:60%;    
+ }
+
 .box1 {
     
     background:#dbdbdb;
@@ -26,6 +31,7 @@ body {
     top: 0;
     bottom: 0;
     margin: auto;
+    border-radius: 25px !important;
 }
 .equipment {
     
@@ -39,6 +45,7 @@ body {
     top: 0;
     bottom: 0;
     margin: auto;
+    border-radius: 25px !important;
 }
 .official {
     background:#a1c4fd;
@@ -47,12 +54,16 @@ body {
     height: 620px;
     position: absolute;
     left: 0;
-    right: 0;
+    right: 0%;
     top: 0;
     bottom: 0;
     margin: auto;
     padding-top: 15px;
     font-weight: bold;
+    padding-left: 100px;
+    padding: 20px;
+    display: inline;
+    border-radius: 25px !important;
 }
 .btn-box {
     bottom:10px;
