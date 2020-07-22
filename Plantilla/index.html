@@ -219,6 +219,8 @@
                     </div>
                 </div>
                 <button type="button" class="btn btn-info" onclick="expiredIdAlert()">Carnet Vencido</button>
+                <button type="button" class="btn btn-info" onclick="edit()">Editar</button>
+                <button type="button" class="btn btn-info" id="save" disabled onclick="save()">Guardar</button>
             </div>
           </div>
         </div>
@@ -279,7 +281,28 @@
               $("#expire").addClass("form-control is-invalid");
               $("#expire").val("02/03/2020");
             }
+            function edit(){
+               
+              $('#number').attr("readonly",false) 
+              $('#task').attr("readonly",false) 
+              $('#squad').attr("readonly",false) 
+              $('#email').attr("readonly",false) 
+              $('#code').attr("readonly",false) 
+              $('#addres').attr("readonly",false) 
+              $('#save').attr("disabled",false) 
 
+            }
+            function save(){
+
+              $('#number').attr("readonly",true) 
+              $('#task').attr("readonly",true) 
+              $('#squad').attr("readonly",true) 
+              $('#email').attr("readonly",true) 
+              $('#code').attr("readonly",true) 
+              $('#addres').attr("readonly",true) 
+              $('#save').attr("disabled",true) 
+
+            }
             $(loaded);
 
 
